@@ -19,6 +19,16 @@ export default Ember.Route.extend({
         }
       });
       question.save();
+    },
+
+    saveAnswer3(params) {
+      var newAnswer = this.store.createRecord('answer', params);
+      var postAnswer = params.postAnswer;
+      postAnswer.get('answers').addObject(newAnswer);
+      newAnswer.save().then(function() {
+        return postAnswer.save();
+      });
+      this.transitionTo('postAnswer', params.postAnswer);
     }
   }
 });

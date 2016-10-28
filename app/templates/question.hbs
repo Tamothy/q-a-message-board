@@ -5,3 +5,11 @@
 
 {{edit-question question=model editQuestionSave="editQuestionSave"}}
 <button {{action 'delete' model}}>Delete</button>
+
+<ul>
+  {{#each model.answers as |answer|}}
+    {{answer-tile answer=answer}}
+  {{/each}}
+</ul>
+
+{{new-answer question=model saveAnswer2="saveAnswer3"}}
