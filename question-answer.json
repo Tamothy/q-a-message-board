@@ -1,12 +1,15 @@
 { "questions": [{
     "content": "What happens if nothing goes right?",
-    "author": "Seashore Sally"
+    "author": "Seashore Sally",
+    "notes": "Like figuratively!"
   }, {
     "content": "Do I need to be with someone that makes me happy?",
-    "author": "Positive Patty"
+    "author": "Positive Patty",
+    "notes": "Happyness is cool!"
   }, {
     "content": "What's a Debbie Downer?",
-    "author": "Mighty Max"
+    "author": "Mighty Max",
+    "notes": "Mighty Max smells."
   }],
   "answers": [{
       "content": "Go left.",
