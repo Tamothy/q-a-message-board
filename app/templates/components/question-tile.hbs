@@ -1,4 +1,1 @@
-<li>Queston: {{question.content}}<br>
-    Author: {{question.author}}<br>
-    Notes: {{question.notes}}
-</li>
+{{#link-to 'question' question.id}}<h1>{{question.content}}</h1>{{/link-to}}
