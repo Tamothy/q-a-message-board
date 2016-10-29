@@ -1,7 +1,9 @@
-<li>Queston: {{model.content}}<br>
-    Author: {{model.author}}<br>
-    Notes: {{model.notes}}
-</li>
+<ul>
+  <li>Queston: {{model.content}}<br>
+      Author: {{model.author}}<br>
+      Notes: {{model.notes}}<br>
+    </li>
+</ul>
 
 {{edit-question question=model editQuestionSave="editQuestionSave"}}
 <button {{action 'delete' model}}>Delete</button>

@@ -1,3 +1,15 @@
-<h1>Hello World!</h1>
+<header>
+  <nav class="navbar navbar-default">
+  <div class="container-fluid">
 
-{{outlet}}
+      {{#link-to 'index'}}Home{{/link-to}}
+      {{#link-to 'about'}}About{{/link-to}}
+
+  </div>
+</nav>
+</header>
+<body>
+  <div class="container">
+    {{outlet}}
+  </div>
+</body>
