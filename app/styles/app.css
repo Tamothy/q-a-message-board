@@ -1,4 +1,12 @@
-body{
+body {
   font-family: futura;
-  padding: 80px;
+  padding: 100px;
+  background-image: url("http://www.likehdwallpaper.com/wp-content/uploads/Simple%20Background/FTP1/2560x1440/Minimalist%20Wallpaper%2015%202560x1440.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: white;
+}
+
+.about h2 {
+  color: white;
 }
