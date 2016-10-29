@@ -1,7 +1,10 @@
-# Q-a-message-board
+# Tam's Question and Answer Board
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### By Tam Nguyen - 10/28/2016
+
+## Description
+
+This project contains a form where users can ask questions and post answers. This utilizes Ember framework, incorporating dynamic routing, one-to-many relationships, and Ember Data concepts.
 
 ## Prerequisites
 
@@ -15,7 +18,7 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone <https://github.com/Tamothy/q-a-message-board>` this repository
 * `cd q-a-message-board`
 * `npm install`
 * `bower install`
@@ -25,29 +28,26 @@ You will need the following things properly installed on your computer.
 * `ember serve`
 * Visit your app at [http://localhost:4200](http://localhost:4200).
 
-### Code Generators
+## Support and contact details
 
-Make use of the many generators for code, try `ember help generate` for more details
+Tam Nguyen's email: mr.tamron@gmail.com
 
-### Running Tests
+## Technologies Used
 
-* `ember test`
-* `ember test --server`
+HTML
 
-### Building
+CSS
 
-* `ember build` (development)
-* `ember build --environment production` (production)
+JavaScript
 
-### Deploying
+Ember
 
-Specify what it takes to deploy your app.
+Node
 
-## Further Reading / Useful Links
+Gulp
 
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+### License
 
+This software is licensed under the MIT license.
+
+Copyright (c) 2016 **Tam Nguyen**
