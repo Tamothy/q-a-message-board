@@ -7,6 +7,11 @@ body {
   padding: 80px;
 }
 
+.title {
+  text-align: center;
+  color: gray;
+}
+
 .question-color {
   color: black;
 }
@@ -25,5 +30,4 @@ ul {
 .about {
   color: red;
   padding: 80px;
-  text-align: center;
 }
