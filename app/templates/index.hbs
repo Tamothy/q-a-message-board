@@ -1,9 +1,11 @@
-<h1>All Questions!</h1>
+<h1>Questions</h1>
 
 <ul>
+  <li>
   {{#each model.questions as |question|}}
   {{question-tile question=question}}
   {{/each}}
+  </li>
 </ul>
 
 {{new-question saveQuestion2="saveQuestion3"}}

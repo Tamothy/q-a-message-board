@@ -1,17 +1,18 @@
-<ul>
-  <li>Queston: {{model.content}}<br>
-      Author: {{model.author}}<br>
-      Notes: {{model.notes}}<br>
-    </li>
-</ul>
+<div class="question-result">
+    <h2 class="question-color">{{model.content}}</h2>
+    <h6 class="question-notes-author">User: {{model.author}}<br>
+        Notes: {{model.notes}}</h6>
+</div>
 
 {{edit-question question=model editQuestionSave="editQuestionSave"}}
-<button {{action 'delete' model}}>Delete</button>
+<button {{action 'delete' model}}>Delete question</button>
 
 <ul>
-  {{#each model.answers as |answer|}}
-    {{answer-tile answer=answer}}
-  {{/each}}
+  <li>
+    {{#each model.answers as |answer|}}
+      {{answer-tile answer=answer}}
+    {{/each}}
+  </li>
 </ul>
 
 {{new-answer question=model saveAnswer2="saveAnswer3"}}
