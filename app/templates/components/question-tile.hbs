@@ -1,1 +1,11 @@
-{{#link-to 'question' question.id}}<h2>{{question.content}}</h2>{{/link-to}}
+<div class="row">
+  <div class="container">
+    <button {{action 'upVote' question}}>Vote up</button>
+    <button {{action 'downVote' question}}>Vote down</button>
+    <h6>{{question.votes}}</h6>
+  </div>
+
+  <div class="container">
+    {{#link-to 'question' question.id}}<h2>{{question.content}}</h2>{{/link-to}}
+  </div>
+</div>
