@@ -1,9 +1,7 @@
 <ul>
   <h1>Questions</h1>
   <li>
-  {{#each model.questions as |question|}}
-  {{question-tile question=question upVote="upVote" downVote="downVote"}}
-  {{/each}}
+  {{questions-display model=model upVote="upVote" downVote="downVote"}}
   </li>
 </ul>
 
