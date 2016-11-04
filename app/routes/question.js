@@ -7,7 +7,12 @@ export default Ember.Route.extend({
   actions: {
     delete(question) {
       if (confirm('Are you sure you want to delete question?')) {
-        question.destroyRecord();
+        var deleteAnswers = question.get('answers').map(function(answer) {
+          return answer.destroyRecord();
+        });
+        Ember.RSVP.all(deleteAnswers).then(function() {
+          question.destroyRecord();
+        });
         this.transitionTo('index');
       }
     },
