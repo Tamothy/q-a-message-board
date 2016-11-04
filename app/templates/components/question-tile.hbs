@@ -1,11 +1,13 @@
 <div class="row">
   <div class="col-sm-1">
-    <span class="glyphicon glyphicon-arrow-up" {{action 'upVote' question}}></span>
-    <h6>{{question.votes}}</h6>
-    <span class="glyphicon glyphicon-arrow-down" {{action 'downVote' question}}></span>
+    {{question-popularity question}}
   </div>
-
-  <div class="col-sm-11">
+  <div class="col-sm-1">
+    <span class="glyphicon glyphicon-chevron-up" {{action 'upVote' question}}></span>
+    <h6>{{question.votes}}</h6>
+    <span class="glyphicon glyphicon-chevron-down" {{action 'downVote' question}}></span>
+  </div>
+  <div class="col-sm-10">
     {{#link-to 'question' question.id}}<h2>{{question.content}}</h2>{{/link-to}}
   </div>
 </div>
