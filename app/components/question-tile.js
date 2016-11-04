@@ -1,6 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  favoriteQuestions: Ember.inject.service('favorite-questions'),
+
   actions: {
     upVote(question) {
       this.sendAction('upVote', question);
@@ -8,6 +10,10 @@ export default Ember.Component.extend({
 
     downVote(question) {
       this.sendAction('downVote', question);
+    },
+
+    fave(question) {
+      this.get('favoriteQuestions').fave(question);
     }
   }
 });
