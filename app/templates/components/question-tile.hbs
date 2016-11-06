@@ -3,12 +3,12 @@
     {{question-popularity question}}
   </div>
   <div class="col-sm-1">
-    <span class="glyphicon glyphicon-triangle-top" {{action 'upVote' question}}></span>
+    <span class="glyphicon glyphicon-triangle-top highlight" {{action 'upVote' question}}></span>
     <h6>{{question.votes}}</h6>
-    <span class="glyphicon glyphicon-triangle-bottom" {{action 'downVote' question}}></span>
+    <span class="glyphicon glyphicon-triangle-bottom highlight" {{action 'downVote' question}}></span>
   </div>
-  <div class="col-sm-10">
+  <div class="col-sm-9">
     {{#link-to 'question' question.id}}<h2>{{question.content}}</h2>{{/link-to}}
-    <span class="glyphicon glyphicon-heart" {{action 'fave' question}}></span>
+    <span class="glyphicon glyphicon-heart highlight" {{action 'addFavoriteQuestion' question}}></span>
   </div>
 </div>

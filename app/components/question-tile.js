@@ -12,8 +12,8 @@ export default Ember.Component.extend({
       this.sendAction('downVote', question);
     },
 
-    fave(question) {
-      this.get('favoriteQuestions').fave(question);
+    addFavoriteQuestion(question) {
+      this.get('favoriteQuestions').addFavoriteQuestion(question);
     }
   }
 });

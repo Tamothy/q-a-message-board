@@ -36,3 +36,11 @@ ul {
   padding: 25px;
   color: red;
 }
+
+.favorites {
+  padding: 80px;
+}
+
+.highlight:hover {
+  opacity: .5;
+}
