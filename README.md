@@ -4,7 +4,7 @@
 
 ## Description
 
-This project contains a form where users can ask questions and post answers. This utilizes Ember framework, incorporating dynamic routing, one-to-many relationships, and Ember Data concepts.
+This project contains a form where users can ask questions and post answers. This utilizes Ember framework, incorporating dynamic routing, one-to-many relationships, Ember Data, helpers, computed properties, and Ember services concepts.
 
 ## Prerequisites
 
